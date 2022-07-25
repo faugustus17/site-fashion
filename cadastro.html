@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cadastro</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <div>
+          <i class="fa-solid fa-users"></i>
+          <span>Tipo de cadastro</span>
+        </div>
+        <hr />
+        <label for="pessoa">Pessoa Jurídica</label>
+      </div>
+      <form class="form" method="post" action="cadastro.html">
+        <div class="item-form">
+          <i class="fa-solid fa-list"></i>
+          <span>Dados Pessoais</span>
+          <hr />
+          <div class="row">
+            <div class="column-3 column label">
+              <label for="nome"><b>Nome do responsável</b></label>
+            </div>
+            <div class="column-9 column input">
+              <input
+                type="text"
+                size="50"
+                name="nomeResponsavel"
+                id="nomeResponsavel"
+                required
+              />
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="column-3 column label">
+              <label for="cnpj"><b>CNPJ</b></label>
+            </div>
+            <div class="column-9 column input">
+              <input type="text" name="cnpj" id="cnpj" required />
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="column-3 column label">
+              <label for="razao"><b>Razão Social</b></label>
+            </div>
+            <div class="column-9 column input">
+              <input
+                type="text"
+                size="50"
+                name="razaoSocial"
+                id="razaoSocial"
+                required
+              />
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="column-3 column label">
+              <label for="inscricao">Inscrição Estadual</label>
+            </div>
+            <div class="column-9 column input">
+              <input
+                type="text"
+                name="inscricaoEstadual"
+                id="inscricaoEstadual"
+              />
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="column-3 column label">
+              <label for="celular">Celular</label>
+            </div>
+            <div class="column-9 column input">
+              <input type="text" name="celular" id="celular" />
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="column-3 column label">
+              <label for="telefone">Telefone fixo</label>
+            </div>
+            <div class="column-9 column input">
+              <input type="text" name="telefoneFixo" id="telefoneFixo" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="column-3 column label">
+              <label for="vendedor">Nome do vendedor</label>
+            </div>
+            <div class="column-9 column input">
+              <input type="text" size="50" name="vendedor" id="vendedor" />
+            </div>
+          </div>
+        </div>
+        <div class="item-form">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Endereço</span>
+          <hr />
+          <div class="row">
+            <div class="column-3 column label">
+              <label for="cep"><b> CEP</b></label>
+            </div>
+            <div class="column-9 column input">
+              <input type="text" name="cep" id="cep" required />
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="column-3 column label">
+              <label for="endereco"><b>Endereço</b></label>
+            </div>
+            <div class="column-9 column input">
+              <input
+                type="text"
+                size="50"
+                name="endereco"
+                id="endereco"
+                required
+              />
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="column-3 column label">
+              <label for="numero"><b>Número</b></label>
+            </div>
+            <div class="column-9 column input">
+              <input type="text" size="10" name="numero" id="numero" required />
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="column-3 column label">
+              <label for="complemento">Complemento</label>
+            </div>
+            <div class="column-9 column input">
+              <input
+                type="text"
+                size="40"
+                name="complemento"
+                id="complemento"
+              />
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="column-3 column label">
+              <label for="referencia">Referência</label>
+            </div>
+            <div class="column-9 column input">
+              <input type="text" size="40" name="referencia" id="referencia" />
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="column-3 column label">
+              <label for="bairro"><b>Bairro</b></label>
+            </div>
+            <div class="column-9 column input">
+              <input type="text" name="bairro" id="bairro" required />
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="column-3 column label">
+              <label for="cidade"><b>Cidade</b></label>
+            </div>
+            <div class="column-9 column input">
+              <input type="text" name="cidade" id="cidade" required />
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="column-3 column label">
+              <label for="estado"><b>Estado</b></label>
+            </div>
+            <div class="column-9 column input">
+              <select id="estado" name="estado" required>
+                <option value="SL">Selecione uma opção</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="EX">Estrangeiro</option>
+              </select>
+            </div>
+          </div>
+          <br />
+        </div>
+        <br />
+      </form>
+      <div class="botao">
+        <input type="submit" value="cancelar" />
+        <input type="submit" value="Criar Conta" />
+      </div>
+    </div>
+  </body>
+</html>
