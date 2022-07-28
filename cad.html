@@ -4,104 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="styl.css" />
     <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css" />
-    <title>Cadastro</title>
+    <title>Document</title>
   </head>
-
   <body>
-    <div class="container flex">
-      <div class="">
-        <div>
-          <i class="fa-solid fa-users"></i>
-          <span>Tipo de cadastro</span>
-        </div>
+    <div class="container">
+      <div class="header container-card">
+        <i class="fa-solid fa-users"></i>
+        <span>Tipo de cadastro</span>
         <hr />
-        <label for="">Pessoa Jurídica</label>
       </div>
-      <form class="" action="#">
-        <div class="">
-          <i class="fa-solid fa-list"></i>
-          <span>Dados Pessoais</span>
-          <hr />
-          <section class="container-flex">
-            <div class="row">
-              <div class="item">
-                <label for="nome"><b>Nome do responsável</b></label>
-              </div>
-              <div class="item">
-                <input
-                  type="text"
-                  name="nomeResponsavel"
-                  id="nomeResponsavel"
-                  required
-                />
-              </div>
-            </div>
-            <br />
-            <div class="row">
-              <div class="">
-                <label for="cnpj"><b>CNPJ</b></label>
-              </div>
-              <div class="">
-                <input type="text" name="cnpj" id="cnpj" required />
-              </div>
-            </div>
-            <br />
-            <div class="row">
-              <div class="">
-                <label for="razao"><b>Razão Social</b></label>
-              </div>
-              <div class="">
-                <input
-                  type="text"
-                  name="razaoSocial"
-                  id="razaoSocial"
-                  required
-                />
-              </div>
-            </div>
-            <br />
-            <div class="row">
-              <div class="">
-                <label for="inscricao">Inscrição Estadual</label>
-              </div>
-              <div class="">
-                <input
-                  type="text"
-                  name="inscricaoEstadual"
-                  id="inscricaoEstadual"
-                />
-              </div>
-            </div>
-            <br />
-            <div class="row">
-              <div class="">
-                <label for="celular">Celular</label>
-              </div>
-              <div class="">
-                <input type="text" name="celular" id="celular" />
-              </div>
-            </div>
-            <br />
-            <div class="row">
-              <div class="">
-                <label for="telefone">Telefone fixo</label>
-              </div>
-              <div class="">
-                <input type="text" name="telefoneFixo" id="telefoneFixo" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="">
-                <label for="vendedor">Nome do vendedor</label>
-              </div>
-              <div class="">
-                <input type="text" name="vendedor" id="vendedor" />
-              </div>
-            </div>
-          </section>
-        </div>
+      <div class="data-personal container-card"></div>
+      <div class="address container-card">
         <div class="">
           <i class="fa-solid fa-location-dot"></i>
           <span>Endereço</span>
@@ -209,12 +124,11 @@
           </div>
           <br />
         </div>
-        <br />
-        <div class="row">
-          <input class="btn" type="submit" value="Cancelar" />
-          <input class="btn btn-vd" type="submit" value="Criar Conta" />
-        </div>
-      </form>
+      </div>
+      <div class="footer">
+        <input class="btn" type="submit" value="Cancelar" />
+        <input class="btn btn-vd" type="submit" value="Criar Conta" />
+      </div>
     </div>
   </body>
 </html>
