@@ -72,17 +72,24 @@ hr {
   transition: all 0.3s ease-out;
 }
 
+.row{
+  display: grid;
+  grid-template-columns: 30% 45% 20%;
+  column-gap: 5%;
+}
+
 label{
   display: flex;
-  padding: 10px;
-  text-align: justify;
+  padding-left: 10px;
+  justify-content: end;
 }
 
 .input-user{
-  padding-left: 10px;
+  padding: 10px;
   border-radius: 3px;
   height: 30px;
   border: 1px solid #cfd8dc;
+  width: 100%;
 }
 
 select {
@@ -91,6 +98,7 @@ select {
   height: 30px;
   border: 1px solid #cfd8dc;
   background-color: white;
+  width: 80%;
 }
 
 input:focus {
@@ -132,19 +140,19 @@ input:focus {
 
   .footer{
     display: flex;
-    text-align: center;
-    flex-wrap: wrap;
+    justify-content: end;
     width: 0;
   }
 }
 
 @media(max-width:768px){
   body{
-    margin: 0 15px;
+    margin: 0 ;
+    justify-items: center;
   }
 
   .container{
-    width: 100%;
+    width: 90%;
   }
 
   .form{
